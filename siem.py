@@ -52,7 +52,7 @@ def simulate_events(count=10, delay=1.5):
 
 # Отчёт по отработке
 def generate_report():
-    print("[📊] Security Report:\n")
+    print("[] Security Report:\n")
     cursor.execute("SELECT type, COUNT(*) FROM events GROUP BY type")
     rows = cursor.fetchall()
     for row in rows:
